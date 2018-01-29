@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+int idade;
+
+printf ("Informe a sua idade: \n");
+scanf ("%d", &idade);
+
+if (idade <16)
+{
+printf ("Nao eleitor");
+}
+
+if ((idade >=18) && (idade <=65))
+{
+printf ("Eleitor obrigatorio");
+}	
+
+else if ((idade >=16 && idade <18 ) || (idade >65))
+{
+printf ("Eleitor Facultativo");
+}
+
+	
+	return 0;
+}
