@@ -1,1 +1,32 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+
+float verificar (float n1, float n2){
+
+	
+	
+	if (n1 >= n2){
+		printf ("%f", n1);
+		return n1;
+      }
+ 
+	else 
+	{
+	
+		return n2;
+		printf ("%f", n2);
+	}
+}
+int main() {
+	
+		float n1, n2, result;
+	
+		printf ("Informe dois numeros: \n");
+		scanf ("%f %f", &n1, &n2);
+	
+		result = verificar (n1, n2);
+		printf ("O resultado %.2f", result); 
+	
+	return 0;
+}
